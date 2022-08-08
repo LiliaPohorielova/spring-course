@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Создание нового Bean -->
+    <!-- Уникальный идентификатор нашего Бина -->
+    <bean id="musicBean"
+          class="ua.com.pogorelova.RockMusic"> <!-- Пишем не что-то абстрактное (не интерфейс), а что-то конкретное (из чего можно создать объекты) -->
+        <!--class="ua.com.pogorelova.ClassicalMusic">  мы можем тут ручками менять бин и не лезть в сам код! ура!   -->
+    </bean>
+
+    <bean id="musicPlayer"
+          class="ua.com.pogorelova.MusicPlayer">
+        <constructor-arg ref="musicBean"/> <!-- У нас есть конструктор, мы обязаны туда что-то передать (ссылку, значение ...) -->
+    </bean>
+
+</beans>
