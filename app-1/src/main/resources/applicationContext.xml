@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Создание нового Бина -->
+    <!-- Уникальный идентификатор нашего Бина -->
+    <bean id="testBean"
+          class="ua.com.pogorelova.TestBean"> <!-- Путь к классу Бина которого я хочу создать -->
+        <constructor-arg value="Lilya"/> <!-- При создании Бина в конструкторе будет передано имя -->
+    </bean>
+
+</beans>
