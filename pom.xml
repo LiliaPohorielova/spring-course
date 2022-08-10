@@ -11,6 +11,7 @@
         <module>app-1</module>
         <module>app-2</module>
         <module>app-3-DI-1</module>
+        <module>app-3-DI-2</module>
     </modules>
     <packaging>pom</packaging>
 

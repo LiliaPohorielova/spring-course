@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:musicPlayer.properties"/>
+
+    <bean id="musicBean"
+          class="ua.com.pogorelova.RockMusic">
+    </bean>
+
+    <bean id="classicBean"
+          class="ua.com.pogorelova.ClassicalMusic">
+    </bean>
+
+    <bean id="rockBean"
+          class="ua.com.pogorelova.RockMusic">
+    </bean>
+
+    <bean id="popBean"
+          class="ua.com.pogorelova.PopMusic">
+    </bean>
+
+    <!--ТЕПЕРЬ НЕ ЧЕРЕЗ КОНСТРУКТОР <constructor-arg/>, А ЧЕРЕЗ СЕТТЕР И <property/>-->
+    <!--<bean id="musicPlayer"
+          class="ua.com.pogorelova.MusicPlayer">
+        <property name="music" ref="musicBean"/>
+
+        &lt;!&ndash;Ручками&ndash;&gt;
+        &lt;!&ndash;<property name="name" value="Name"/>
+        <property name="volume" value="50"/>&ndash;&gt;
+
+        &lt;!&ndash;Через отдельный файл&ndash;&gt;
+        <property name="name" value="${musicPlayer.name}"/>
+        <property name="volume" value="${musicPlayer.volume}"/>
+    </bean>-->
+
+    <!--ТЕПЕРЬ НЕ ЧЕРЕЗ КОНСТРУКТОР <constructor-arg/>, А ЧЕРЕЗ СЕТТЕР И <property/>-->
+    <bean id="musicPlayer"
+          class="ua.com.pogorelova.MusicPlayer">
+        <property name="musicList">
+            <!-- СОЗДАТЬ И ПЕРЕДАТЬ ЛИСТ ИЗ БИНОВ -->
+            <list>
+                <ref bean="classicBean"/>
+                <ref bean="rockBean"/>
+                <ref bean="popBean"/>
+            </list>
+        </property>
+        <property name="name" value="${musicPlayer.name}"/>
+        <property name="volume" value="${musicPlayer.volume}"/>
+    </bean>
+</beans>
