@@ -14,6 +14,7 @@
         <module>app-3-DI-2</module>
         <module>app-4-scope</module>
         <module>app-5-init-destroy-factory-methods</module>
+        <module>app-6-aComponent</module>
     </modules>
     <packaging>pom</packaging>
 
