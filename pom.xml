@@ -15,6 +15,7 @@
         <module>app-4-scope</module>
         <module>app-5-init-destroy-factory-methods</module>
         <module>app-6-aComponent</module>
+        <module>app-7-aAutowired</module>
     </modules>
     <packaging>pom</packaging>
 
