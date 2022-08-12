@@ -18,6 +18,7 @@
         <module>app-7-aAutowired</module>
         <module>app-8-aQualifier</module>
         <module>app-9-aValue-aScope-aPostConstruct-aPreDestroy</module>
+        <module>app-10-aConfiguration</module>
     </modules>
     <packaging>pom</packaging>
 
