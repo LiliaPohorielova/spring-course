@@ -16,6 +16,7 @@
         <module>app-5-init-destroy-factory-methods</module>
         <module>app-6-aComponent</module>
         <module>app-7-aAutowired</module>
+        <module>app-8-aQualifier</module>
     </modules>
     <packaging>pom</packaging>
 
