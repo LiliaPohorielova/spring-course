@@ -19,6 +19,7 @@
         <module>app-8-aQualifier</module>
         <module>app-9-aValue-aScope-aPostConstruct-aPreDestroy</module>
         <module>app-10-aConfiguration</module>
+        <module>app-10-aConfiguration-HW</module>
     </modules>
     <packaging>pom</packaging>
 
