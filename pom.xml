@@ -8,6 +8,7 @@
     <artifactId>spring-course</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <!-- Chapter 1. Spring Core (IoC, DI, Bean, XML, Annotations -->
         <module>app-1</module>
         <module>app-2</module>
         <module>app-3-DI-1</module>
@@ -20,6 +21,9 @@
         <module>app-9-aValue-aScope-aPostConstruct-aPreDestroy</module>
         <module>app-10-aConfiguration</module>
         <module>app-10-aConfiguration-HW</module>
+
+        <!-- Chapter 2. Spring MVC (Model, View, Controller + Thymeleaf -->
+        <module>app--1-SpringMVC-first-app</module>
     </modules>
     <packaging>pom</packaging>
 
