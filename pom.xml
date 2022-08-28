@@ -24,6 +24,7 @@
 
         <!-- Chapter 2. Spring MVC (Model, View, Controller + Thymeleaf -->
         <module>app--1-SpringMVC-first-app</module>
+        <module>app--2-SpringMVC-java-config-app</module>
     </modules>
     <packaging>pom</packaging>
 

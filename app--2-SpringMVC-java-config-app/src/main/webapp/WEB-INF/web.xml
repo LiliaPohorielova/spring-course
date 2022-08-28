@@ -1,0 +1,45 @@
+<!-- ========================================================================================= -->
+
+<!--                    В ПРОШЛОМ УРОКЕ ИСПОЛЬЗОВАЛИ web.xml КОНФИГУРАЦИЮ                      -->
+<!--  СЕЙЧАС ВМЕСТО ЭТОГО ФАЙЛА ИСПОЛЬЗУЕМ КЛАСС MySpringMvcDispatcherSerlvetIntitializer.java -->
+
+<!--  ФАЙЛ web.xml СЧИТЫВАЕТСЯ СЕРВЕРОМ Apache Tomcat, ЧИТАЕТ КОНФИГУРАЦИЮ DispatcherServlet   -->
+
+<!-- ========================================================================================= -->
+
+
+
+<!-- ТЕПЕРЬ ЭТОТ ФАЙЛ МОЖНО УДАЛИТЬ, МЫ ИЗБАВИЛИСЬ ОТ .xml КОНФИГУРАЦИИ -->
+
+<!--<!DOCTYPE web-app PUBLIC-->
+<!--        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"-->
+<!--        "http://java.sun.com/dtd/web-app_2_3.dtd" >-->
+
+<!--<web-app>-->
+<!--  <display-name>Archetype Created Web Application</display-name>-->
+
+<!-- !!!!!!! Настройка DispatcherServlet, указываем где искать конфигурацию Спринга (applicationContextMVC.xml) !!!!!! -->
+
+<!--  <servlet>-->
+<!--    <servlet-name>dispatcher</servlet-name>-->
+<!--    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>-->
+<!--    <init-param>-->
+<!--      <param-name>contextConfigLocation</param-name>-->
+<!--      <param-value>/WEB-INF/applicationContextMVC.xml</param-value>-->
+<!--    </init-param>-->
+<!--    <load-on-startup>1</load-on-startup>-->
+<!--  </servlet>-->
+
+<!-- !!!!! Указываем url, который будет перехватывать DispatcherServlet, в нашем случае любой запрос ("/") !!!!! -->
+
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>dispatcher</servlet-name>-->
+<!--    <url-pattern>/</url-pattern>-->
+<!--  </servlet-mapping>-->
+<!--</web-app>-->
+
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+</web-app>
