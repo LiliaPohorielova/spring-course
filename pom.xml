@@ -26,6 +26,7 @@
         <module>app--1-SpringMVC-first-app</module>
         <module>app--2-SpringMVC-java-config-app</module>
         <module>app--3-SpringMVC-aController</module>
+        <module>app--4-SpringMVC-aRequestParam</module>
     </modules>
     <packaging>pom</packaging>
 
