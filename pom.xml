@@ -27,6 +27,7 @@
         <module>app--2-SpringMVC-java-config-app</module>
         <module>app--3-SpringMVC-aController</module>
         <module>app--4-SpringMVC-aRequestParam</module>
+        <module>app--5-SpringMVC-Model-To-Thymleaf</module>
     </modules>
     <packaging>pom</packaging>
 
