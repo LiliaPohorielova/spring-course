@@ -24,6 +24,11 @@ public class PersonDao {
 
     // create, update, delete
 
+    public void create(Person person) {
+        person.setId(++PEOPLE_COUNT);
+        people.add(person);
+    }
+
     public Person findById(int id) {
         return people.stream().filter(person -> person.getId() == id).findAny().orElse(null);
     }
