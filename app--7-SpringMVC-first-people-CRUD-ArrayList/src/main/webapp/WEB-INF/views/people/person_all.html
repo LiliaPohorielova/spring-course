@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>People</title>
+</head>
+<body>
+<h2>All People</h2>
+<div th:each = "person : ${people}">
+    <h3><a th:href = "@{'/people/' + ${person.getId()}}" th:text = "(${person.getId()}) + ' ' + (${person.getName()})"></a></h3>
+</div>
+</body>
+</html>

@@ -29,6 +29,7 @@
         <module>app--4-SpringMVC-aRequestParam</module>
         <module>app--5-SpringMVC-Model-To-Thymleaf</module>
         <module>app--6-SpringMVC-simple-parameters-calculator</module>
+        <module>app--7-SpringMVC-first-people-CRUD-ArrayList</module>
     </modules>
     <packaging>pom</packaging>
 
