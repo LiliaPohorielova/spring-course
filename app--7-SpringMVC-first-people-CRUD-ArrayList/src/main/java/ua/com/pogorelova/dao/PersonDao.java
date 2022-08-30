@@ -16,10 +16,10 @@ public class PersonDao {
     // Блок инициализации (можно вместо этого конструктор)
     {
         people = new ArrayList<>();
-        people.add(new Person(++PEOPLE_COUNT, "Tom"));
-        people.add(new Person(++PEOPLE_COUNT, "Jane"));
-        people.add(new Person(++PEOPLE_COUNT, "Anna"));
-        people.add(new Person(++PEOPLE_COUNT, "Rick"));
+        people.add(new Person(++PEOPLE_COUNT, "Tom", 24, "tom@email.com"));
+        people.add(new Person(++PEOPLE_COUNT, "Jane", 40, "jane@email.com"));
+        people.add(new Person(++PEOPLE_COUNT, "Anna", 15, "anna@email.com"));
+        people.add(new Person(++PEOPLE_COUNT, "Rick", 18, "rick@email.com"));
     }
 
     // create, update, delete
@@ -32,6 +32,8 @@ public class PersonDao {
     public void update(int id, Person person) {
         Person personToBeUpdated = findById(id);
         personToBeUpdated.setName(person.getName());
+        personToBeUpdated.setAge(person.getAge());
+        personToBeUpdated.setEmail(person.getEmail());
     }
 
     public void delete(int id) {
