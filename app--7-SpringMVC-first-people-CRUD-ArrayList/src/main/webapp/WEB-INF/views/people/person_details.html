@@ -7,5 +7,15 @@
 <body>
 <h2>Person Information:</h2>
 <h3 th:text = "(${person.getId()}) + ' ' + (${person.getName()})"></h3>
+<div style="width:150px;">
+    <div style="float: left; width: 90px">
+        <a th:href="@{'/people/' + ${person.getId()} + '/edit'}"><button>Edit Person</button></a>
+    </div>
+    <div style="float: right; width: 50px">
+        <form th:method="DELETE" th:action="@{'/people/' + ${person.getId()}}">
+            <input type="submit" value="Delete">
+        </form>
+    </div>
+</div>
 </body>
 </html>

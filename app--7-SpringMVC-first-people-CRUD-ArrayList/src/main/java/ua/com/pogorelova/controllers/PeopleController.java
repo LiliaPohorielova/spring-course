@@ -29,6 +29,24 @@ public class PeopleController {
         return "redirect:/people";
     }
 
+    @GetMapping("/{id}/edit")
+    public String showEditPage(@PathVariable("id") int id, Model model) {
+        model.addAttribute("person", personDao.findById(id));
+        return "people/person_edit";
+    }
+
+    @PatchMapping("/{id}")
+    public String update(@PathVariable int id, @ModelAttribute("person") Person person) {
+        personDao.update(id, person);
+        return "redirect:/people";
+    }
+
+    @DeleteMapping("/{id}")
+    public String delete(@PathVariable int id) {
+        personDao.delete(id);
+        return "redirect:/people";
+    }
+
     @GetMapping("/{id}")
     public String findById(@PathVariable("id") int id, Model model) {
         // плохо (контроллер не должен за это отвечать)
